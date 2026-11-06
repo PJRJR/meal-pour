@@ -1,0 +1,104 @@
+body {
+  margin: 0;
+  padding: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #222;
+  background: #fff;
+  line-height: 1.4;
+}
+
+.page {
+  max-width: 1000px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+h1 {
+  margin: 10px 0;
+}
+
+#food-buttons {
+  margin-top: 16px;
+}
+
+button {
+  font-family: inherit;
+  font-size: 15px;
+  padding: 8px 14px;
+  margin: 4px;
+  border: 2px solid #333;
+  border-radius: 12px;
+  background: #fff;
+  color: #222;
+  cursor: pointer;
+}
+
+button:hover {
+  background: #f0ede6;
+}
+
+button:disabled {
+  border-color: #ccc;
+  color: #aaa;
+  background: #f5f5f5;
+  cursor: not-allowed;
+}
+
+button:disabled .measure {
+  color: #bbb;
+}
+
+button:active {
+  background: #e4e0d6;
+}
+
+button .measure {
+  font-size: 12px;
+  color: #777;
+}
+
+#clear-btn {
+  margin-top: 12px;
+  border-color: #c25b5b;
+  background: #fde8e8;
+  color: #8a2b2b;
+  font-size: 14px;
+}
+
+#clear-btn:hover {
+  background: #f9d3d3;
+}
+
+#status {
+  min-height: 1.4em;
+  margin: 8px 0;
+  color: #b00020;
+  font-size: 14px;
+}
+
+canvas {
+  max-width: 100%;
+  height: auto !important;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.how-to {
+  max-width: 640px;
+  margin: 24px auto 0;
+  text-align: left;
+}
+
+.how-to h2 {
+  font-size: 18px;
+}
+
+.footer {
+  margin-top: 24px;
+  font-size: 14px;
+  color: #555;
+}
+
+.footer p {
+  margin: 4px 0;
+}

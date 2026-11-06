@@ -1,0 +1,69 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Meal Pour | Nutrient Data Visualization</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.9.4/p5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/matter-js/0.19.0/matter.min.js"></script>
+  </head>
+  <body>
+    <div class="page">
+      <h1>Meal Pour</h1>
+      <p>
+        How much of a day's nutrition does one meal use up? Based on the FDA's
+        2,000 calorie reference.
+      </p>
+
+      <div id="food-buttons"></div>
+      <button id="clear-btn" type="button">Clear bins</button>
+      <p id="status"></p>
+
+      <div id="sketch-holder"></div>
+
+      <div class="how-to">
+        <h2>How to use it</h2>
+        <ul>
+          <li>Click a food to pour a serving. Click it again to add more.</li>
+          <li>
+            Each ball is 1% of a daily value. A full bin is 100%. Red means over
+            a limit, and green means a goal was met.
+          </li>
+          <li>Hover over a ball to see which food it came from.</li>
+        </ul>
+      </div>
+
+      <div class="footer">
+        <p>
+          Food data:
+          <a
+            href="https://www.kaggle.com/datasets/niharika41298/nutrition-details-for-most-common-foods/data"
+            target="_blank"
+            >Nutrition details for most common foods (Kaggle)</a
+          >, loaded from
+          <a
+            href="https://docs.google.com/spreadsheets/d/1HBDJWs3sQs8OqgBQUYZVsfFln9WIZQro7AlsMCJvsQU/edit?usp=sharing"
+            target="_blank"
+            >this Google Sheet</a
+          >.
+        </p>
+        <p>
+          Daily values:
+          <a
+            href="https://www.fda.gov/food/nutrition-facts-label/daily-value-nutrition-and-supplement-facts-labels"
+            target="_blank"
+            >FDA Daily Value on the Nutrition and Supplement Facts Labels</a
+          >.
+        </p>
+        <p>
+          Made with <a href="https://p5js.org/" target="_blank">p5.js</a> and
+          <a href="https://brm.io/matter-js/" target="_blank">Matter.js</a>.
+        </p>
+        <p id="data-source"></p>
+      </div>
+    </div>
+
+    <script src="sketch.js"></script>
+  </body>
+</html>
